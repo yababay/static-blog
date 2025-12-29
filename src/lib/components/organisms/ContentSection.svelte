@@ -9,7 +9,7 @@
 <section {id} class="content-section {align}">
 	<div class="title-area">
 		{#if title || description}
-			<div class="text">
+			<div class="text header">
 				{#if title}
 					<h2>
 						{title}
@@ -35,6 +35,10 @@
 
 <style lang="scss">
 	@import '../../scss/breakpoints.scss';
+
+	.header {
+		color: #903B14;
+	}
 
 	.content-section {
 		display: flex;
@@ -66,6 +70,7 @@
 
 			display: grid;
 			place-items: center;
+			max-width: 80ch;
 		}
 
 		@include for-tablet-landscape-up {

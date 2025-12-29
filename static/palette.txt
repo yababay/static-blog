@@ -1,0 +1,36 @@
+/* Coolors Exported Palette - https://coolors.co/e15f23-e66c31-faf4ee-f9f3ed-d6cfb3-f1dabc-f8e1be-9d6955-a1bca1-651109 */
+
+- CSV
+
+E15F23,E66C31,FAF4EE,F9F3ED,D6CFB3,F1DABC,F8E1BE,9D6955,A1BCA1,651109
+
+- With #
+
+#E15F23, #E66C31, #FAF4EE, #F9F3ED, #D6CFB3, #F1DABC, #F8E1BE, #9D6955, #A1BCA1, #651109
+
+- Array
+
+["E15F23","E66C31","FAF4EE","F9F3ED","D6CFB3","F1DABC","F8E1BE","9D6955","A1BCA1","651109"]
+
+- Object
+
+{"Spicy Paprika":"E15F23","Autumn Leaf":"E66C31","Parchment":"FAF4EE","Parchment 2":"F9F3ED","Sand Dune":"D6CFB3","Champagne Mist":"F1DABC","Wheat":"F8E1BE","Cinnamon Wood":"9D6955","Muted Teal":"A1BCA1","Dark Garnet":"651109"}
+
+- Extended Array
+
+[{"name":"Spicy Paprika","hex":"E15F23","rgb":[225,95,35],"cmyk":[0,58,84,12],"hsb":[19,84,88],"hsl":[19,76,51],"lab":[56,48,56]},{"name":"Autumn Leaf","hex":"E66C31","rgb":[230,108,49],"cmyk":[0,53,79,10],"hsb":[20,79,90],"hsl":[20,78,55],"lab":[60,44,53]},{"name":"Parchment","hex":"FAF4EE","rgb":[250,244,238],"cmyk":[0,2,5,2],"hsb":[30,5,98],"hsl":[30,55,96],"lab":[96,1,4]},{"name":"Parchment","hex":"F9F3ED","rgb":[249,243,237],"cmyk":[0,2,5,2],"hsb":[30,5,98],"hsl":[30,50,95],"lab":[96,1,4]},{"name":"Sand Dune","hex":"D6CFB3","rgb":[214,207,179],"cmyk":[0,3,16,16],"hsb":[48,16,84],"hsl":[48,30,77],"lab":[83,-2,15]},{"name":"Champagne Mist","hex":"F1DABC","rgb":[241,218,188],"cmyk":[0,10,22,5],"hsb":[34,22,95],"hsl":[34,65,84],"lab":[88,3,18]},{"name":"Wheat","hex":"F8E1BE","rgb":[248,225,190],"cmyk":[0,9,23,3],"hsb":[36,23,97],"hsl":[36,81,86],"lab":[91,3,20]},{"name":"Cinnamon Wood","hex":"9D6955","rgb":[157,105,85],"cmyk":[0,33,46,38],"hsb":[17,46,62],"hsl":[17,30,47],"lab":[49,18,20]},{"name":"Muted Teal","hex":"A1BCA1","rgb":[161,188,161],"cmyk":[14,0,14,26],"hsb":[120,14,74],"hsl":[120,17,68],"lab":[74,-14,11]},{"name":"Dark Garnet","hex":"651109","rgb":[101,17,9],"cmyk":[0,83,91,60],"hsb":[5,91,40],"hsl":[5,84,22],"lab":[21,36,28]}]
+
+- XML
+
+<palette>
+  <color name="Spicy Paprika" hex="E15F23" r="225" g="95" b="35" />
+  <color name="Autumn Leaf" hex="E66C31" r="230" g="108" b="49" />
+  <color name="Parchment" hex="FAF4EE" r="250" g="244" b="238" />
+  <color name="Parchment" hex="F9F3ED" r="249" g="243" b="237" />
+  <color name="Sand Dune" hex="D6CFB3" r="214" g="207" b="179" />
+  <color name="Champagne Mist" hex="F1DABC" r="241" g="218" b="188" />
+  <color name="Wheat" hex="F8E1BE" r="248" g="225" b="190" />
+  <color name="Cinnamon Wood" hex="9D6955" r="157" g="105" b="85" />
+  <color name="Muted Teal" hex="A1BCA1" r="161" g="188" b="161" />
+  <color name="Dark Garnet" hex="651109" r="101" g="17" b="9" />
+</palette>

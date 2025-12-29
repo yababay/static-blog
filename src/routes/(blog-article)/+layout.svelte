@@ -45,7 +45,7 @@
 </svelte:head>
 
 <div class="article-layout">
-	<Header showBackground />
+	<!-- Header showBackground / -->
 
 	<main>
 		<article id="article-content">
@@ -78,14 +78,14 @@
 			</div>
 		</article>
 
-		{#if post.relatedPosts && post.relatedPosts.length > 0}
+		<!-- {#if post.relatedPosts && post.relatedPosts.length > 0}
 			<div class="container">
 				<RelatedPosts posts={post.relatedPosts} />
 			</div>
-		{/if}
+		{/if} -->
 	</main>
 
-	<Footer />
+	<!-- Footer / -->
 </div>
 
 <style lang="scss">

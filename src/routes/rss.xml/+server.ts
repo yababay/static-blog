@@ -44,10 +44,10 @@ const xml = (posts: BlogPost[]) => `
     .map(
       (post) => `
         <item>
-          <guid>${siteBaseUrl}/${post.slug}</guid>
+          <guid>${siteBaseUrl}/${post.slug}.html</guid>
           <title>${post.title}</title>
           <description>${post.excerpt}</description>
-          <link>${siteBaseUrl}/${post.slug}</link>
+          <link>${siteBaseUrl}/${post.slug}.html</link>
           <pubDate>${dateformat(post.date, 'ddd, dd mmm yyyy HH:MM:ss o')}</pubDate>
           ${post.tags ? post.tags.map((tag) => `<category>${tag}</category>`).join('') : ''}
           <content:encoded><![CDATA[

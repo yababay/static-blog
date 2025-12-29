@@ -11,7 +11,7 @@
 </script>
 
 <div class="container">
-	<ContentSection title="All Blog Posts">
+	<ContentSection title="Читайте в блоге:">
 		<div class="grid">
 			{#each posts as post}
 				<BlogPostCard

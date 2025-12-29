@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { dev } from '$app/environment';
 	import Card from '$lib/components/atoms/Card.svelte';
 	import Tag from '$lib/components/atoms/Tag.svelte';
 	import Image from '../atoms/Image.svelte';
@@ -11,10 +12,12 @@
 	export let readingTime: string | undefined = undefined;
 
 	export let showImage = true;
+
+	const href = `/${slug}${dev ? '' : '.html'}`;
 </script>
 
 <Card
-	href="/{slug}"
+	{href}
 	target="_self"
 	additionalClass="blog-post-card {!showImage || !coverImage ? 'no-image' : ''}"
 >

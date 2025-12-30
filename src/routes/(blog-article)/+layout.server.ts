@@ -1,4 +1,5 @@
 import { filteredPosts } from '$lib/data/blog-posts';
+import '$lib/scss/_article.scss'
 
 export async function load({ url }: { url: { pathname: string } }) {
   const { pathname } = url;

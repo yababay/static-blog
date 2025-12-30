@@ -21,7 +21,8 @@
 
 		&.primary {
 			background-color: var(--color--primary-tint);
-			color: var(--color--primary);
+			color: #2883f4;
+			//color: var(--color--primary);
 		}
 		&.secondary {
 			background-color: var(--color--secondary-tint);

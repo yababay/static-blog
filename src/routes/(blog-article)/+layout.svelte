@@ -1,4 +1,5 @@
 <script lang="ts">
+	import '$lib/scss/_article.scss';
 	import Header from '$lib/components/organisms/Header.svelte';
 	import Footer from '$lib/components/organisms/Footer.svelte';
 	import Tag from '$lib/components/atoms/Tag.svelte';
@@ -52,9 +53,9 @@
 			<div class="header">
 				{#if post}
 					<h1>{post.title}</h1>
-					<div class="note">Published on {dateformat(post.date, 'UTC:dd mmmm yyyy')}</div>
+					<div class="note">Опубликовано {dateformat(post.date, 'UTC:dd mmmm yyyy')}</div>
 					{#if post.updated}
-						<div class="note">Updated on {dateformat(post.updated, 'UTC:dd mmmm yyyy')}</div>
+						<div class="note">Обновлено {dateformat(post.updated, 'UTC:dd mmmm yyyy')}</div>
 					{/if}
 					{#if post.readingTime}
 						<div class="note">{post.readingTime}</div>
@@ -62,7 +63,7 @@
 					{#if post.tags?.length}
 						<div class="tags">
 							{#each post.tags as tag}
-								<Tag>{tag}</Tag>
+								<Tag>#{tag}</Tag>
 							{/each}
 						</div>
 					{/if}

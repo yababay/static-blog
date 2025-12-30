@@ -30,6 +30,19 @@ export const importPosts = (render = false) => {
   return posts;
 }
 
+const russianReadingTime = (html: string | undefined) => {
+  if (!html) return ''
+  const readingTimeResult = readingTime(striptags(html) || '')
+  if (!readingTimeResult) return ''
+  let words = 'Время чтения'
+  const { minutes } = readingTimeResult
+  const mins = Math.round(minutes)
+  const rest = mins % 10
+  if (mins > 4 && mins < 21) return `${words} ${mins} минут`
+  if (rest === 1) return `${words} ${mins} минута`
+  return `${words} ${mins} минуты`
+}
+
 export const filterPosts = (posts: BlogPost[]) => {
   return posts.filter((post) => !post.hidden)
     .sort((a, b) =>
@@ -40,12 +53,13 @@ export const filterPosts = (posts: BlogPost[]) => {
           : 0
     )
     .map((post) => {
-      const readingTimeResult = post.html ? readingTime(striptags(post.html) || '') : undefined;
+      //const readingTimeResult = post.html ? readingTime(striptags(post.html) || '') : undefined;
+      //const readingTimeResult = post.html ? russianReadingTime(post.html) : undefined;
       const relatedPosts = getRelatedPosts(posts, post);
 
       return {
         ...post,
-        readingTime: readingTimeResult ? readingTimeResult.text : '',
+        readingTime: russianReadingTime(post.html), // readingTimeResult ? readingTimeResult.text : '',
         relatedPosts: relatedPosts,
       } as BlogPost;
     });

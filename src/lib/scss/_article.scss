@@ -1,8 +1,17 @@
-article {
+blockquote {
+    border-left: 0.5rem solid #ddd !important;
+    padding-left: 0.5rem;
+    color: #5d5f65;
+    margin-block: .5rem;
+}
+
+/*article {
     max-width: 80ch;
 
     svg {
         max-width: 80ch;
         margin-top: 20rem;
     }
-}
+
+
+}*/
